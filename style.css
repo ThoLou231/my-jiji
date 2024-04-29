@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{
+    to store information for later refference 
+    --colorname 
+
+} */
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+nav img{
+    width: 6rem;
+    height: 4rem;
+    object-fit: contain;
+}
+nav{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: #00B53F;
+    align-items: center;
+    box-shadow: 0.1rem 0.1rem 0.8rem rgb(66, 65, 65);
+    margin-bottom: 1px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+.link{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav .link:nth-child(1){
+    color: white;
+}
+
+nav .link:nth-child(2){
+    min-height: 1rem;
+    min-width:2px ;
+    background-color:#fff ;
+}
+
+nav .link:nth-child(3){
+    color: #fff;
+}
+
+nav .link:nth-child(4){
+    height: 2.5rem;
+    width: 7rem;
+    background-color:orange ;
+    border:none ;
+    padding: 0.5 1rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* hero css */
+
+.hero{
+    background-color: #00952A;
+    width:100vw ;
+    height: 40vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+span{
+    color: white;
+    background-color: black;
+    padding: 0.3rem;
+    font-size: small;
+    border-radius: 0.5rem;
+}
+
+.hero input{
+    width: 40vw;
+    height: 3rem;
+    border: none;
+    border-radius: 9px;
+    
+}
+
+.fa-magnifying-glass{
+    color: black;
+    /* background-color: blue; */
+    position: relative;
+    /* top: ;
+    left: ; */
+    right: 2.5rem;
+
+}
+
+
+        /* main css  */
+
+main{
+    background-color: #EBF2F7;
+    padding: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+aside{
+    background-color: #fff;
+    box-shadow: 0 0 2px #f3f3f3;
+    width: 30vw;
+    height: 70vh;
+    padding: 2rem;
+}
+
+.asidecontent{
+    width: 30%;
+    height: 70vh;
+    background-color: #fff;
+    padding: 2rem;
+    border-left: 1px solid #d3d3d3;
+    display: none;
+}
+ 
+/* product css */
+
+.products{
+    width: 70vw;
+    padding: 2rem;
+}
+
+
+.item img{
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+}
+
+/* 
+h3{
+    font-size: x-large;
+    position: relative;
+    top: ;
+    right: ;
+    left: 3rem;
+    bottom: 1.5rem;
+}  */
+
+.item{
+    width: 23%;
+    height: 35vh;
+    background-color: #fff;
+    box-shadow: 0.1rem , 0.1rem 1px #c4c2c2;
+    border-radius: 5px;
+    padding: 0 1rem;
+    position: relative;
+ 
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.design{
+    background-color: #fff;
+    box-shadow: 0 0 3px rgb(117, 111, 111);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1rem;
+    bottom: 4rem;
+    
+}
+
+
+    /* animation */
+
+.products h3{
+
+    animation-name: animeText;
+    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+@keyframes animeText {
+
+    from{
+        color: red;
+        transform: translateY(30px);
+    }
+
+    to{
+        color: blue;
+        /* transform: ; */
+    }
+    
+}
+
+@media (max-width: 800px){
+
+    aside{
+        display: none;
+    }
+
+    .product{
+        width: 100vw;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .item{
+        width: 100%!important;
+    }
+
+}
+
+
+
+    
