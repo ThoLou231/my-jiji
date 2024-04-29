@@ -88,8 +88,7 @@ span{
     font-size: small;
     border-radius: 0.5rem;
 }
-
-.hero input{
+g.hero input{
     width: 40vw;
     height: 3rem;
     border: none;
@@ -218,6 +217,10 @@ h3{
 }
 
 @media (max-width: 800px){
+
+    .big{
+        display: none;
+    }
 
     aside{
         display: none;
