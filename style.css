@@ -218,9 +218,7 @@ h3{
 
 @media (max-width: 800px){
 
-    .big{
-        display: none;
-    }
+   
 
     aside{
         display: none;
@@ -235,6 +233,10 @@ h3{
 @media (max-width: 600px) {
     .item{
         width: 100%!important;
+    }
+
+    .big{
+        display: none;
     }
 
 }
